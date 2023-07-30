@@ -1,0 +1,38 @@
+header#Header #Navbar {
+  position: relative;
+  z-index: 200;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 77px;
+  background: linear-gradient(180deg, rgba(59, 53, 99, 0.2), rgba(19, 20, 32, 0.2)), #131420;
+  padding: 0 106px;
+  width: 100%;
+}
+header#Header #Navbar .action_item {
+  color: #fff;
+  padding: 0 15.25px;
+  font-weight: 600;
+}
+header#Header #Navbar .hover_dropdown .hover_dropdown_list {
+  display: none;
+  position: absolute;
+  width: 100%;
+  left: 0;
+}
+header#Header #Navbar .hover_dropdown .hover_dropdown_list {
+  position: absolute;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 17px;
+  width: 100%;
+  z-index: 10;
+  min-height: 368px;
+  background: hsla(0, 0%, 100%, 0.04);
+  backdrop-filter: blur(26px);
+  -webkit-backdrop-filter: blur(26px);
+  transition: top 0.3s ease;
+  top: 100%;
+}/*# sourceMappingURL=Header.css.map */
