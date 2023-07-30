@@ -14,15 +14,11 @@ header#Header #Navbar .action_item {
   padding: 0 15.25px;
   font-weight: 600;
 }
-header#Header #Navbar .hover_dropdown .hover_dropdown_list {
-  display: none;
-  position: absolute;
-  width: 100%;
+header#Header #Navbar .hover_dropdown .hover_dropdown_content {
   left: 0;
-}
-header#Header #Navbar .hover_dropdown .hover_dropdown_list {
+  top: -100%;
+  transform: scaleY(0);
   position: absolute;
-  z-index: 10;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -34,5 +30,53 @@ header#Header #Navbar .hover_dropdown .hover_dropdown_list {
   backdrop-filter: blur(26px);
   -webkit-backdrop-filter: blur(26px);
   transition: top 0.3s ease;
+}
+header#Header #Navbar .hover_dropdown .hover_dropdown_content .hover_dropdown_list {
+  width: 100%;
+  max-width: 750px;
+}
+header#Header #Navbar .hover_dropdown .hover_dropdown_content .hover_dropdown_list.lg_list {
+  max-width: 1000px;
+}
+header#Header #Navbar .hover_dropdown .hover_dropdown_content .dropdown_action_list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 51px 50px;
+  max-width: 1000px;
+  padding: 39px 0;
+}
+header#Header #Navbar .hover_dropdown .hover_dropdown_content .dropdown_action_list .dropdown_action_list_item .desc {
+  max-width: 185px;
+}
+header#Header #Navbar .hover_dropdown:hover .hover_dropdown_content {
   top: 100%;
+  opacity: 1;
+  transform: scaleY(1);
+}
+header#Header #Navbar .user_control .connect_btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 117px;
+  height: 30px;
+  font-weight: 700;
+  font-size: 12.6px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+header#Header #Navbar .user_control .user_btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+  width: 30px;
+  backdrop-filter: blur(21px);
+  -webkit-backdrop-filter: blur(21px);
+  border-radius: 4px;
+}
+header#Header #Navbar .user_control .user_btn img {
+  width: 9px;
+  height: 10px;
 }/*# sourceMappingURL=Header.css.map */
