@@ -14,10 +14,14 @@ header#Header #Navbar .action_item {
   padding: 0 15.25px;
   font-weight: 600;
 }
+header#Header #Navbar .action_item:hover {
+  background: linear-gradient(225.13deg, #7bf5fb 1.83%, #8b8efa 90.04%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 header#Header #Navbar .hover_dropdown .hover_dropdown_content {
   left: 0;
-  top: -100%;
-  transform: scaleY(0);
+  top: -400px;
   position: absolute;
   display: flex;
   justify-content: center;
@@ -29,7 +33,7 @@ header#Header #Navbar .hover_dropdown .hover_dropdown_content {
   background: hsla(0, 0%, 100%, 0.04);
   backdrop-filter: blur(26px);
   -webkit-backdrop-filter: blur(26px);
-  transition: top 0.3s ease;
+  transition: top 0.3s linear;
 }
 header#Header #Navbar .hover_dropdown .hover_dropdown_content .hover_dropdown_list {
   width: 100%;

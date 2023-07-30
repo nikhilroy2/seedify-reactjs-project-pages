@@ -41,4 +41,23 @@
 body {
   background: #13141e !important;
   color: #fff !important;
+}
+
+.section_container {
+  position: relative;
+  max-width: 1440px;
+  padding: 0 110px;
+  margin: auto;
+}
+
+.btn_how {
+  background: #5231d4;
+  color: #fff;
+  padding: 18px 52px;
+  border-radius: 6px;
+  cursor: pointer;
+  pointer-events: visible;
+}
+.btn_how:hover {
+  background: #4829c3;
 }/*# sourceMappingURL=App.css.map */

@@ -1,0 +1,73 @@
+#Homepage #Section1 {
+  padding: 80px 110px;
+}
+#Homepage #Section1 .graphich_box video {
+  width: 700px;
+  height: auto;
+}
+#Homepage #Section1 .section_graphich {
+  position: absolute;
+  z-index: 0;
+  inset: 0;
+  width: 100%;
+  margin: auto;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: clip;
+  pointer-events: none;
+}
+#Homepage #Section1 .section_graphich span {
+  position: absolute;
+  background-position-x: initial;
+  background-position-y: initial;
+  background-size: initial;
+  background-repeat-x: initial;
+  background-repeat-y: initial;
+  background-attachment: initial;
+  background-origin: initial;
+  background-clip: initial;
+  background-color: initial;
+  filter: blur(100px);
+}
+#Homepage #Section1 .section_graphich span:nth-child(1) {
+  width: 744.88px;
+  height: 544.76px;
+  background: linear-gradient(180deg, rgba(24, 75, 255, 0), #6353dd);
+  background-image: linear-gradient(rgba(24, 75, 255, 0), rgb(99, 83, 221));
+  transform: rotate(-107.82deg);
+  margin: auto;
+  left: -340px;
+  top: -300px;
+}
+#Homepage #Section1 .section_graphich span:nth-child(2) {
+  width: 1550.26px;
+  height: 799.11px;
+  background: linear-gradient(180deg, rgba(0, 194, 255, 0), #167ac6);
+  background-image: linear-gradient(rgba(0, 194, 255, 0), rgb(22, 122, 198));
+  transform: rotate(-110.82deg);
+  margin: auto;
+  left: -1200px;
+  top: -500.15px;
+  opacity: 0.8;
+}
+#Homepage #Section1 .section_graphich span:nth-child(3) {
+  width: 400.88px;
+  height: 544.76px;
+  background: linear-gradient(180deg, rgba(24, 75, 255, 0), #6353dd);
+  background-image: linear-gradient(rgba(24, 75, 255, 0), rgb(99, 83, 221));
+  transform: rotate(-107.82deg);
+  margin: auto;
+  right: 460px;
+  top: 140px;
+  opacity: 0.4;
+}
+#Homepage #Section1 .section_graphich span:nth-child(4) {
+  width: 1550.26px;
+  height: 799.11px;
+  background: linear-gradient(180deg, rgba(0, 194, 255, 0), #167ac6);
+  background-image: linear-gradient(rgba(0, 194, 255, 0), rgb(22, 122, 198));
+  margin: auto;
+  right: -1270px;
+  top: -460.15px;
+  opacity: 0.8;
+}/*# sourceMappingURL=Homepage.css.map */

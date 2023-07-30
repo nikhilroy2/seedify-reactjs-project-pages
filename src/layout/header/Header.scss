@@ -9,18 +9,23 @@ header#Header {
         background: linear-gradient(180deg, rgba(59, 53, 99, .2), rgba(19, 20, 32, .2)), #131420;
         padding: 0 106px;
         width: 100%;
-
+       
         .action_item {
             color: #fff;
             padding: 0 15.25px;
             font-weight: 600;
+
+            &:hover {
+                background: linear-gradient(225.13deg, #7bf5fb 1.83%, #8b8efa 90.04%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
         }
 
         .hover_dropdown {
             .hover_dropdown_content {
                 left: 0;
-                top: -100%;
-                transform: scaleY(0);
+                top: -400px;
                 position: absolute;
                 display: flex;
                 justify-content: center;
@@ -32,7 +37,7 @@ header#Header {
                 background: hsla(0, 0%, 100%, .04);
                 backdrop-filter: blur(26px);
                 -webkit-backdrop-filter: blur(26px);
-                transition: top .3s ease;
+                transition: top .3s linear;
 
                 .hover_dropdown_list {
                     width: 100%;
@@ -94,6 +99,7 @@ header#Header {
                 backdrop-filter: blur(21px);
                 -webkit-backdrop-filter: blur(21px);
                 border-radius: 4px;
+
                 img {
                     width: 9px;
                     height: 10px;
