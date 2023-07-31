@@ -182,7 +182,11 @@
 
     #Section3 {
         position: relative;
-        height: calc(100vh - 96px);
+
+        .section_body {
+            height: calc(100vh - 96px);
+        }
+
         .section_title {
             position: relative;
             font-weight: 700;
@@ -209,6 +213,7 @@
             left: 0;
             top: 0;
             z-index: -1;
+
             span {
                 position: absolute;
                 filter: blur(100px);
@@ -236,6 +241,107 @@
                     right: 0;
                 }
             }
+        }
+
+        .section_footer {
+            background: rgba(101, 113, 218, .2);
+            height: 96px;
+        }
+    }
+
+    #Section4 {
+        position: relative;
+
+        .section_inner {
+            padding: 180px 0 48px;
+            position: relative;
+
+            .section_content {
+                p {
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 140%;
+                    opacity: .7;
+                    margin-top: 13px;
+                }
+            }
+
+            .line_list {
+                .line_list_item {
+                    position: relative;
+
+                    &:not(:last-child)::after {
+                        content: "";
+                        left: 30px;
+                        top: 60px;
+                        z-index: -1;
+                        height: 100%;
+                        width: 1px;
+                        background: hsla(0, 0%, 100%, .2);
+                        position: absolute;
+                        z-index: -1;
+                    }
+                }
+
+                .process_img {
+                    img {
+                        position: relative;
+                        background: #32323B;
+                        border-radius: 10px;
+                        z-index: 2;
+                        min-width: 60px;
+                        height: 60px;
+                    }
+                }
+
+                .line_content {
+                    p {
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 140%;
+                        opacity: .7;
+                        margin: 12px 0 24px;
+                    }
+                }
+            }
+        }
+
+        .section_graphich {
+            pointer-events: none;
+            position: absolute;
+            z-index: 0;
+            inset: 0;
+            width: 100%;
+            margin: auto;
+            height: 100%;
+            overflow-x: hidden;
+            overflow-y: clip;
+            pointer-events: none;
+            background: url('../../static/images/Looper-3.3a647040.svg') 0 no-repeat;
+
+            span {
+                position: absolute;
+                width: 1174.02px;
+                height: 815.24px;
+                background: linear-gradient(180deg, rgba(0, 194, 255, 0), #68c8e6);
+                filter: blur(100px);
+                transform: matrix(.15, -.99, -.99, -.15, 0, 0);
+                margin: auto;
+                left: -300px;
+                top: 100.15px;
+                opacity: .3;
+            }
+        }
+    }
+
+    #Section5 {
+        .section_inner {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 137px;
+            padding: 198px 0;
         }
     }
 }

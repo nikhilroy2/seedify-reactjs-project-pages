@@ -60,4 +60,40 @@ body {
 }
 .btn_how:hover {
   background: #4829c3;
+}
+
+.btn_base {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 12px;
+  background: rgba(81, 47, 217, 0.96);
+  border-radius: 6px;
+  width: 164px;
+  height: 48px;
+  border: 0;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.btn_line {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 164px;
+  height: 50px;
+  background: #5643b0;
+  border-radius: 6px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  cursor: pointer;
+  color: #fff;
+}
+.btn_line:hover {
+  background: #44358b;
 }/*# sourceMappingURL=App.css.map */
