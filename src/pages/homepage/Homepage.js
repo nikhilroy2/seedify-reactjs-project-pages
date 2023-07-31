@@ -148,6 +148,14 @@ const Section3 = () => {
                 <h2 className='font-bold text-4xl section_title text-center'>
                     How To Buy SFUND
                 </h2>
+
+                <div className="content_body text-center">
+                    <iframe title="how to buy sfund" class="HowToBuy_iframe__kye5N" src="https://www.youtube.com/embed/TL-6czMQ5Ac?showinfo=0" allowfullscreen=""></iframe>
+                </div>
+            </div>
+            <div className="section_graphich">
+                <span></span>
+                <span></span>
             </div>
         </section>
     )
