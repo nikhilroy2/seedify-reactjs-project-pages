@@ -282,4 +282,45 @@
   align-items: flex-start;
   gap: 137px;
   padding: 198px 0;
+}
+#Homepage #Section5 .section_inner .content_header p {
+  font-weight: 500;
+  font-size: 18px;
+  color: #b8b9bc;
+  margin-bottom: 50px;
+}
+#Homepage #Section5 .section_inner .content_header p span {
+  color: #7bf5fb;
+}
+#Homepage #Section5 .section_inner .content_body .tab_list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+  height: 216px;
+}
+#Homepage #Section5 .section_inner .content_body .tab_list .tab_list_button {
+  backdrop-filter: blur(21px);
+  -webkit-backdrop-filter: blur(21px);
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 17px;
+  height: 67px;
+  min-width: 111px;
+  flex-grow: 1;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: hsla(0, 0%, 100%, 0.1);
+  color: #fff;
+  width: 100%;
+}
+#Homepage #Section5 .section_inner .content_body .tab_list .tab_list_button:hover {
+  color: #5643b0;
+}
+#Homepage #Section5 .section_inner .content_body .tab_list .tab_list_button[aria-selected=true] {
+  background: #5643b0;
+}
+#Homepage #Section5 .section_inner .content_body .tab_list .tab_list_button[aria-selected=true]:hover {
+  color: #fff;
 }/*# sourceMappingURL=Homepage.css.map */
