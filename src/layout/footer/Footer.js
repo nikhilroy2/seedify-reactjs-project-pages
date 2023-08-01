@@ -1,5 +1,7 @@
 import React from 'react';
-import './Footer.css'
+import './Footer.css';
+
+import { Link } from 'react-router-dom';
 function Footer(props) {
 
 
@@ -50,7 +52,9 @@ function Footer(props) {
                                 <h2 className="mb-6 text-lg font-semibold text-gray-900 uppercase dark:text-white">Company</h2>
                                 <ul className="text-gray-500 dark:text-gray-400 font-medium">
                                     <li className="">
-                                        <a href="/tos" className=" ">Terms of Services</a>
+                                        <Link to="/terms-of-services">
+                                            Terms of Services
+                                        </Link>
                                     </li>
                                     <li>
                                         <a href="#" className="">Privacy Policy</a>

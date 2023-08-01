@@ -1,5 +1,6 @@
 import React from 'react';
 import './Header.css';
+import { Link } from 'react-router-dom';
 function Header(props) {
     return (
         <header id='Header'>
@@ -115,9 +116,11 @@ const Navbar = () => {
         <nav id='Navbar'>
             <div className="flex alilgn-items-center">
                 <div className="item_box">
-                    <a href="#" className='logo'>
+                    <Link className="logo" to="/">
                         <img src={require('../../static/images/logo.c8a4712a.svg').default} alt="" />
-                    </a>
+
+                    </Link>
+
                 </div>
 
             </div>
