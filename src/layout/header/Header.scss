@@ -9,7 +9,13 @@ header#Header {
         background: linear-gradient(180deg, rgba(59, 53, 99, .2), rgba(19, 20, 32, .2)), #131420;
         padding: 0 106px;
         width: 100%;
-       
+
+        .logo {
+            img {
+                height: 28px;
+            }
+        }
+
         .action_item {
             color: #fff;
             padding: 0 15.25px;

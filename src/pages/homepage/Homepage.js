@@ -797,6 +797,11 @@ const Section5 = () => {
                     </div>
                 </div>
             </div>
+
+            <div className="section_footer flex justify-center gap-4 items-center">
+                <h3 className='text-2xl font-bold'>Are you a web3 game studio looking to get incubated or launched by Seedify?</h3>
+                <a href="#" className='btn_base'>Apply now</a>
+            </div>
         </section >
     )
 }

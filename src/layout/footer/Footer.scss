@@ -1,0 +1,78 @@
+footer#Footer {
+    padding-top: 80px;
+    background: #1a1c29;
+    height: 330px;
+    width: 100%;
+    border-top: 1px solid #36394f;
+    backdrop-filter: blur(30px);
+
+    .column_item_1 {
+        p {
+            width: 304px;
+            font-family: adrianna, sans-serif;
+            margin-top: 24px;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 21px;
+            color: #fff;
+            opacity: .5;
+        }
+    }
+
+    .contact_footer {
+        .contact_list {
+            .input_group {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-top: 16px;
+                padding: 6px;
+                width: 274px;
+                height: 50px;
+                background: rgba(54, 57, 79, .5);
+                border: 1px solid hsla(0, 0%, 100%, .15);
+
+                input {
+                    background: transparent;
+                    border: none;
+                    outline: none;
+                    box-shadow: none;
+                    font-size: 18px;
+
+                    &:focus {
+                        outline: none;
+                    }
+                }
+
+                .submit_btn {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 38px;
+                    height: 38px;
+                    border-radius: 6px;
+                    background: rgba(99, 80, 187, .21);
+                    -webkit-backdrop-filter: blur(42px);
+                    backdrop-filter: blur(42px);
+                    cursor: pointer;
+                }
+            }
+
+            .social_list {
+                .action_item {
+                    margin-top: 10px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 36px;
+                    height: 36px;
+                    border-radius: 12px;
+                    background: rgba(73, 73, 73, .15);
+                    -webkit-backdrop-filter: blur(21px);
+                    backdrop-filter: blur(21px);
+                    
+                }
+            }
+        }
+    }
+}

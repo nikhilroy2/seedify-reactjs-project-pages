@@ -9,6 +9,9 @@ header#Header #Navbar {
   padding: 0 106px;
   width: 100%;
 }
+header#Header #Navbar .logo img {
+  height: 28px;
+}
 header#Header #Navbar .action_item {
   color: #fff;
   padding: 0 15.25px;
