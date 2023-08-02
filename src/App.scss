@@ -53,6 +53,12 @@ body {
   max-width: 1440px;
   padding: 0 110px;
   margin: auto;
+  @media (max-width: 1000px){
+    padding: 0 50px;
+  }
+  @media (max-width: 650px){
+    padding: 0 15px;
+  }
 }
 
 .btn_how {

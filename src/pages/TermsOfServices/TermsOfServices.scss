@@ -29,6 +29,9 @@
             &.alpha_list{
                 list-style-type: lower-alpha;
             }
+            &.roman{
+                list-style-type: lower-roman;
+            }
             li {
                 margin-top: 15px;
                 padding-left: 15px;
@@ -38,6 +41,9 @@
                 color: #fff;
                 text-align: left;
                 opacity: .7;
+                &:has(.content_list){
+                    opacity: 1;
+                }
             }
         }
     }
