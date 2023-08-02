@@ -24,7 +24,7 @@ header#Header #Navbar .action_item:hover {
 }
 header#Header #Navbar .hover_dropdown .hover_dropdown_content {
   left: 0;
-  top: -400px;
+  top: 0px;
   position: absolute;
   display: flex;
   justify-content: center;
@@ -36,7 +36,19 @@ header#Header #Navbar .hover_dropdown .hover_dropdown_content {
   background: hsla(0, 0%, 100%, 0.04);
   backdrop-filter: blur(26px);
   -webkit-backdrop-filter: blur(26px);
-  transition: top 0.3s linear;
+  transition: 0.3s ease;
+  opacity: 0;
+  pointer-events: none;
+}
+header#Header #Navbar .hover_dropdown .hover_dropdown_content .dropdown_title {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 23px;
+  transition: text-shadow 0.1s ease-out;
+  margin-bottom: 7px;
+}
+header#Header #Navbar .hover_dropdown .hover_dropdown_content .dropdown_title:hover {
+  text-shadow: 0 0 15px #7bf5fb;
 }
 header#Header #Navbar .hover_dropdown .hover_dropdown_content .hover_dropdown_list {
   width: 100%;
@@ -55,11 +67,20 @@ header#Header #Navbar .hover_dropdown .hover_dropdown_content .dropdown_action_l
 }
 header#Header #Navbar .hover_dropdown .hover_dropdown_content .dropdown_action_list .dropdown_action_list_item .desc {
   max-width: 185px;
+  font-size: 12px;
+  opacity: 0.7;
+  line-height: 15px;
+  font-weight: 600;
+}
+header#Header #Navbar .hover_dropdown .hover_dropdown_info {
+  padding-left: 42px;
+  border-left: 2px solid rgba(91, 117, 138, 0.2);
 }
 header#Header #Navbar .hover_dropdown:hover .hover_dropdown_content {
   top: 100%;
   opacity: 1;
   transform: scaleY(1);
+  pointer-events: visible;
 }
 header#Header #Navbar .user_control .connect_btn {
   display: flex;

@@ -128,7 +128,7 @@ const Navbar = () => {
             <ul className='item_box flex items-center h-full'>
                 <li className='hover_dropdown h-full'>
                     <a href="#" className='action_item h-full flex items-center'>IGO Launchpad</a>
-                    <div className="hover_dropdown_content">
+                    <div className="hover_dropdown_content h-full">
                         <ul className="hover_dropdown_list">
                             <li className="dropdown_item">
                                 <ul className='dropdown_action_list'>
@@ -141,7 +141,7 @@ const Navbar = () => {
                                                     <div className="flex items-start">
                                                         <img className='me-3' src={v.icon} alt="" />
                                                         <div className="colntent">
-                                                            <h3 className='text-xl'>{v.name}</h3>
+                                                            <h3 className='text-xl dropdown_title font-bold'>{v.name}</h3>
                                                             <p className='text-sm desc'>
                                                                 {v.description}
                                                             </p>
@@ -155,13 +155,22 @@ const Navbar = () => {
                                 </ul>
                             </li>
                         </ul>
+
+                        <div className="hover_dropdown_info h-full flex items-center">
+                            <a href="#" className="block">
+                                <img src={require('../../static/images/howTo.webp')} alt="img" />
+                                <strong className='text-[18px] mt-[14px] block'>How to Participate in IGOs?</strong>
+                                <p className='text-[12px] mt-1'>Learn how to join exciting Seedify IGOs</p>
+                                <button className="btn_action_blink">Read More</button>
+                            </a>
+                        </div>
                     </div>
 
                 </li>
 
                 <li className='hover_dropdown h-full'>
                     <a href="#" className='action_item h-full flex items-center'>INO Launchpad</a>
-                    <div className="hover_dropdown_content">
+                    <div className="hover_dropdown_content h-full">
                         <ul className="hover_dropdown_list">
                             <li className="dropdown_item">
                                 <ul className='dropdown_action_list'>
@@ -173,7 +182,7 @@ const Navbar = () => {
                                                     <div className="flex items-start">
                                                         <img className='me-3' src={v.icon} alt="" />
                                                         <div className="colntent">
-                                                            <h3 className='text-xl'>{v.name}</h3>
+                                                            <h3 className='text-xl dropdown_title font-bold'>{v.name}</h3>
                                                             <p className='text-sm desc'>
                                                                 {v.description}
                                                             </p>
@@ -187,13 +196,23 @@ const Navbar = () => {
                                 </ul>
                             </li>
                         </ul>
+
+                        <div className="hover_dropdown_info h-full flex items-center">
+                            <a href="#" className="block">
+                                <img src={require('../../static/images/snftsIntro.png')} alt="img" />
+                                <strong className='text-[18px] mt-[14px] block'>Introducing SNFTS</strong>
+                                <p className='text-[12px] mt-1'>Learn all about our newest master product.</p>
+                                <button className="btn_action_blink">Read More</button>
+                            </a>
+                        </div>
+
                     </div>
 
                 </li>
 
                 <li className='hover_dropdown h-full'>
                     <a href="#" className='action_item h-full flex items-center'>Stake/Farm</a>
-                    <div className="hover_dropdown_content">
+                    <div className="hover_dropdown_content h-full">
                         <ul className="hover_dropdown_list lg_list">
                             <li className="dropdown_item">
                                 <ul className='dropdown_action_list'>
@@ -218,7 +237,18 @@ const Navbar = () => {
 
                                 </ul>
                             </li>
+
+
                         </ul>
+
+                        <div className="hover_dropdown_info h-full flex items-center">
+                            <a href="#" className="block">
+                                <img src={require('../../static/images/snftsIntro.png')} alt="img" />
+                                <strong className='text-[18px] mt-[14px] block'>Introducing SNFTS</strong>
+                                <p className='text-[12px] mt-1'>Learn all about our newest master product.</p>
+                                <button className="btn_action_blink">Read More</button>
+                            </a>
+                        </div>
                     </div>
 
                 </li>

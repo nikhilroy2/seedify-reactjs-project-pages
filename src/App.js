@@ -25,7 +25,6 @@ function App() {
           </Routes>
         </Base>
       </BrowserRouter>
-
     </div>
   );
 }

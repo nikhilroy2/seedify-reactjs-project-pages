@@ -31,7 +31,7 @@ header#Header {
         .hover_dropdown {
             .hover_dropdown_content {
                 left: 0;
-                top: -400px;
+                top: 0px;
                 position: absolute;
                 display: flex;
                 justify-content: center;
@@ -43,7 +43,20 @@ header#Header {
                 background: hsla(0, 0%, 100%, .04);
                 backdrop-filter: blur(26px);
                 -webkit-backdrop-filter: blur(26px);
-                transition: top .3s linear;
+                transition: .3s ease;
+                opacity: 0;
+                pointer-events: none;
+
+                .dropdown_title {
+                    font-weight: 600;
+                    font-size: 18px;
+                    line-height: 23px;
+                    transition: text-shadow .1s ease-out;
+                    margin-bottom: 7px;
+                    &:hover {
+                        text-shadow: 0 0 15px #7bf5fb;
+                    }
+                }
 
                 .hover_dropdown_list {
                     width: 100%;
@@ -65,9 +78,18 @@ header#Header {
                     .dropdown_action_list_item {
                         .desc {
                             max-width: 185px;
+                            font-size: 12px;
+                            opacity: .7;
+                            line-height: 15px;
+                            font-weight: 600;
                         }
                     }
                 }
+            }
+
+            .hover_dropdown_info {
+                padding-left: 42px;
+                border-left: 2px solid rgba(91, 117, 138, .2);
             }
 
             &:hover {
@@ -75,6 +97,7 @@ header#Header {
                     top: 100%;
                     opacity: 1;
                     transform: scaleY(1);
+                    pointer-events: visible;
                 }
             }
 

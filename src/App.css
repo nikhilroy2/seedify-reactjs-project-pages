@@ -106,4 +106,17 @@ body {
 }
 .btn_line:hover {
   background: #44358b;
+}
+
+.btn_action_blink {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 23px;
+  color: #7bf5fb;
+  margin-top: 9px;
+  cursor: pointer;
+  transition: all 0.2s ease-out;
+}
+.btn_action_blink:hover {
+  text-shadow: 0 0 15px #7bf5fb;
 }/*# sourceMappingURL=App.css.map */
