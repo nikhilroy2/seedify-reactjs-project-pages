@@ -100,6 +100,27 @@ const Section1 = () => {
         ),
       },
     ],
+
+    personal_data: [
+      {
+        id: 1,
+        list: <> Information provided by you for KYC purpose </>,
+        list_children_object: [
+          {
+            id: 1,
+            list: (
+              <>
+                {" "}
+                Personal identification data: name, email address, digital
+                wallet address, country, date of birth, nationality, photo of
+                national ID card or passport, photo of your face (selfie),
+                documentation for proof of address.
+              </>
+            ),
+          },
+        ],
+      },
+    ],
   };
 
   return (
@@ -116,6 +137,28 @@ const Section1 = () => {
               <ol className="content_list">
                 {content_object_list?.introduction?.map((v) => {
                   return <li key={v.id}>{v.list}</li>;
+                })}
+              </ol>
+            </li>
+
+            <li>
+              <h3 className="section_subtitle">
+                What Personal Data Do We Collect?
+              </h3>
+              <ol className="content_list">
+                {content_object_list?.personal_data?.map((v) => {
+                  return (
+                    <li key={v.id}>
+                      {v.list}
+                      {v?.list_children_object && (
+                        <ol className="content_list ms-5">
+                          {v.list_children_object.map((j) => {
+                            return <li key={j.id}>{j.list}</li>;
+                          })}
+                        </ol>
+                      )}
+                    </li>
+                  );
                 })}
               </ol>
             </li>
