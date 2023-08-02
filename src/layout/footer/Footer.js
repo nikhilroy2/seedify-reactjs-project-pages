@@ -49,8 +49,8 @@ function Footer(props) {
                                 </p>
                             </div>
                             <div>
-                                <h2 className="mb-3 text-lg font-semibold text-gray-900 uppercase dark:text-white">Company</h2>
-                                <ul className="text-gray-500 dark:text-gray-400 font-medium">
+                                <h2 className="mb-3 text-lg text-white">Company</h2>
+                                <ul className="opacity-70 font-medium">
                                     <li className="">
                                         <Link to="/terms-of-services">
                                             Terms of Services
