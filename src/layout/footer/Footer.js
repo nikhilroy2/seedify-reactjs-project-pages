@@ -57,10 +57,14 @@ function Footer(props) {
                                         </Link>
                                     </li>
                                     <li>
-                                        <a href="#" className="">Privacy Policy</a>
+                                        <Link to="privacy-policy">
+                                            Privacy Policy
+                                        </Link>
                                     </li>
                                     <li>
-                                        <a href="#" className="">Whitepaper</a>
+                                        <Link to="/whitepaper">
+                                            Whitepaper
+                                        </Link>
                                     </li>
                                 </ul>
                             </div>

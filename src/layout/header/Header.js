@@ -224,7 +224,7 @@ const Navbar = () => {
                                                     <div className="flex items-start">
                                                         <img className='me-3' src={v.icon} alt="" />
                                                         <div className="colntent">
-                                                            <h3 className='text-xl'>{v.name}</h3>
+                                                            <h3 className='text-xl dropdown_title font-bold'>{v.name}</h3>
                                                             <p className='text-sm desc'>
                                                                 {v.description}
                                                             </p>
