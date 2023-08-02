@@ -156,6 +156,169 @@ const Section3 = () => {
 
 
 const Section4 = () => {
+
+    const com_pools_card_object = [
+        {
+            id: 1,
+            title: 'Solidus AI',
+            pool_img: require('../../static/images/1690375629869Sophia20Black20bg.webp'),
+            pool_alt: 'img',
+            description: `Solidus has successfully constructed an environmentally conscious, state-of-the-art High-Performance Computing (HPC) Data Centre spanning over 8,000 square feet. This facility is strategically situated in a highly secure European location. In conjunction with this remarkable achievement, Solidus is poised to unveil the ...`,
+            coin_img: require('../../static/icons/bnb.webp'),
+            coin_alt: 'bnb',
+            coin_amount: '400K',
+            coin_tooltip: '400000',
+            coin_name: 'BUSD',
+            coin_rate: '1 BUSD = 33.33 SOPH',
+            progress: '100%',
+            progress_value: '6484392.75 / 6484392.75 CGV',
+            participants: 6096
+        },
+        {
+            id: 2,
+            title: 'Cogito Protocol',
+            pool_img: require('../../static/images/coin_bg_2.webp'),
+            pool_alt: 'img',
+            description: `Cogito Protocol offers a decentralized and AI-driven tracercoin - a stablecoin uncorrelated to fiat currencies. It is a spin-off from SingularityNET (AGIX).`,
+            coin_img: require('../../static/icons/bnb.webp'),
+            coin_alt: 'bnb',
+            coin_amount: '259.4K',
+            coin_tooltip: '259375.71',
+            coin_name: 'BUSD',
+            coin_rate: '1 BUSD = 25 CGV',
+            progress: '100%',
+            progress_value: '6484392.75 / 6484392.75 CGV',
+            participants: 6280
+        },
+        {
+            id: 3,
+            title: 'Orbofi AI (Public)',
+            pool_img: require('../../static/images/coin_bg_3.webp'),
+            pool_alt: 'img',
+            description: `Orbofi AI is the most sophisticated AI-generated content infrastructure and platform currently in the web3 market, that serves as the main factory and engine for all AI-generated gaming/media assets on web3.`,
+            coin_img: require('../../static/icons/bnb.webp'),
+            coin_alt: 'bnb',
+            coin_amount: '400K',
+            coin_tooltip: '400000',
+            coin_name: 'BUSD',
+            coin_rate: '1 BUSD = 125 OBI',
+            progress: '100%',
+            progress_value: '6484392.75 / 6484392.75 CGV',
+            participants: 6280
+        },
+        {
+            id: 4,
+            title: 'Orbofi AI (Public)',
+            pool_img: require('../../static/images/coin_bg_3.webp'),
+            pool_alt: 'img',
+            description: `Orbofi AI is the most sophisticated AI-generated content infrastructure and platform currently in the web3 market, that serves as the main factory and engine for all AI-generated gaming/media assets on web3.`,
+            coin_img: require('../../static/icons/bnb.webp'),
+            coin_alt: 'bnb',
+            coin_amount: '90K',
+            coin_tooltip: '90000',
+            coin_name: 'BUSD',
+            coin_rate: '1 BUSD = 133.33 OBI',
+            progress: '100%',
+            progress_value: '12000000 / 12000000 OBI',
+            participants: 683
+        },
+        {
+            id: 5,
+            title: 'Eldarune',
+            pool_img: require('../../static/images/coin_bg_4.webp'),
+            pool_alt: 'img',
+            description: `Eldarune is an AI-Powered medieval RPG based on a storyline with 4K graphics, PvP, and PVE modes. While playing Eldarune you will travel 21 islands, fight in the hundreds of dungeons, and defeat the strongest monsters with your friends or alone.`,
+            coin_img: require('../../static/icons/bnb.webp'),
+            coin_alt: 'bnb',
+            coin_amount: '253K',
+            coin_tooltip: '253000',
+            coin_name: 'BUSD',
+            coin_rate: '1 BUSD = 66.67 ELDA',
+            progress: '100%',
+            progress_value: '16866666.67 / 16866666.67 ELDA',
+            participants: 6259
+        },
+        {
+            id: 6,
+            title: 'Synergy Land',
+            pool_img: require('../../static/images/coin_bg_5.webp'),
+            pool_alt: 'img',
+            description: `Synergy Land is a cutting-edge web3 multiplayer game that fuses MOBA mechanics with the aRPG genre in a breathtaking fantasy world of earth, water, ice and fire ! An immersive gameplay experience for casual and hardcore gamers alike offering players true ownership of their assets!`,
+            coin_img: require('../../static/icons/bnb.webp'),
+            coin_alt: 'bnb',
+            coin_amount: '383.5K',
+            coin_tooltip: '383523.78',
+            coin_name: 'BUSD',
+            coin_rate: '1 BUSD = 8.3333 SNG',
+            progress: '100%',
+            progress_value: '3196018.79 / 3196018.79 SNG',
+            participants: 6184
+        },
+        {
+            id: 7,
+            title: 'HyperCycle',
+            pool_img: require('../../static/images/coin_bg_6.webp'),
+            pool_alt: 'img',
+            description: `A Layer 0++ Blockchain Architecture Optimised for Scalable AI Microservices`,
+            coin_img: require('../../static/icons/bnb.webp'),
+            coin_alt: 'bnb',
+            coin_amount: '577.5K',
+            coin_tooltip: '577500',
+            coin_name: 'BUSD',
+            coin_rate: '1 BUSD = 11.7647 HYPC',
+            progress: '100%',
+            progress_value: '6794117.65 / 6794117.65 HYPC',
+            participants: 6768
+        },
+        {
+            id: 8,
+            title: 'LitLab Games',
+            pool_img: require('../../static/images/coin_bg_7.webp'),
+            pool_alt: 'img',
+            description: `LitLab Games is the first esports developer and publisher launching games backed by blockchain technology with a token-based economy thanks to LITT. It's first title is CyberTitans, a 100% playable game of genre autobattler for 4/8 players where gamers will compete for LITT.`,
+            coin_img: require('../../static/icons/bnb.webp'),
+            coin_alt: 'bnb',
+            coin_amount: '390K',
+            coin_tooltip: '390000',
+            coin_name: 'BUSD',
+            coin_rate: '1 BUSD = 100 LITT',
+            progress: '100%',
+            progress_value: '39000000 / 39000000 LITT',
+            participants: 6701
+        },
+        {
+            id: 9,
+            title: 'Shockwaves (Private)',
+            pool_img: require('../../static/images/coin_bg_8.webp'),
+            pool_alt: 'img',
+            description: `Shockwaves is a groundbreaking online blockchain game designed to deliver an unparalleled gaming experience through its innovative blend of AI-driven NFTs, algorithmically generated cities, and music-infused gameplay.`,
+            coin_img: require('../../static/icons/bnb.webp'),
+            coin_alt: 'bnb',
+            coin_amount: '72.1K',
+            coin_tooltip: '72132.19',
+            coin_name: 'BUSD',
+            coin_rate: '1 BUSD = 54.054 NEUROS',
+            progress: '100%',
+            progress_value: '3499033.67 / 3499033.67 NEUROS',
+            participants: 638
+        },
+        {
+            id: 10,
+            title: 'Shockwaves (Public)',
+            pool_img: require('../../static/images/coin_bg_8.webp'),
+            pool_alt: 'img',
+            description: `Shockwaves is a groundbreaking online blockchain game designed to deliver an unparalleled gaming experience through its innovative blend of AI-driven NFTs, algorithmically generated cities, and music-infused gameplay.`,
+            coin_img: require('../../static/icons/bnb.webp'),
+            coin_alt: 'bnb',
+            coin_amount: '284.6K',
+            coin_tooltip: '284635.66',
+            coin_name: 'BUSD',
+            coin_rate: '1 BUSD = 50 NEUROS',
+            progress: '100%',
+            progress_value: '14231782.89 / 19505006 NEUROS',
+            participants: 6516
+        },
+    ]
     return (
         <section id="Section4">
             <div className="section_container">
@@ -166,221 +329,72 @@ const Section4 = () => {
 
                     <div className="com_pools_card flex items-center justify-between flex-wrap">
 
-                        <div className="com_pools_card_item ">
-                            <div className="card_header flex  gap-6 p-3">
-                                <img src={require('../../static/images/1688740172997solidus-logo.webp')} alt="img" />
-                                <div className="content">
-                                    <div className="flex items-start mb-3 justify-between"><h3>Solidus AI</h3>
-                                    </div>
-                                    <p>
-                                        Solidus has successfully constructed an environmentally conscious, state-of-the-art High-Performance Computing (HPC) Data Centre spanning over 8,000 square feet. This facility is strategically situated in a highly secure European location. In conjunction with this remarkable achievement, Solidus is poised to unveil the ...
-                                    </p>
-                                </div>
-                            </div>
-                            <div className="card_body">
-                                <div className="card_body_section_1 flex items-center">
-                                    <div className="item_box ">
-                                        <small>TOTAL RAISED</small>
-                                        <div className="coin_box flex items-center gap-[8px]">
-                                            <img src={require('../../static/icons/bnb.webp')} alt="bnb" />
-                                            <span className="coin_amount text-[32px] font-bold">
-                                                400K
-                                            </span>
-                                            <span className="coin_name text-[32px] font-bold">
-                                                BUSD
-                                            </span>
-                                            <span className="coin_type">Filled</span>
+                        {com_pools_card_object.map(v => {
+                            return (
+                                <div key={v.id} className="com_pools_card_item ">
+                                    <div className="card_header flex  gap-6 p-3">
+                                        <img src={v.pool_img} alt={v.pool_alt} />
+                                        <div className="content">
+                                            <div className="flex items-start mb-3 justify-between"><h3> {v.title} </h3>
+                                            </div>
+                                            <p>
+                                                {v.description}
+                                            </p>
                                         </div>
                                     </div>
-                                    <div className="item_box">
-                                        <button className="btn_card_gray">1 BUSD = 33.33 SOPH</button>
-                                    </div>
-                                </div>
-                                <div className="card_body_section_2 flex items-center">
-                                    <ul className='w-full'>
-                                        <li className="flex justify-between py-[24px]">
-                                            <span>
-                                                Progress 100%
-                                            </span>
-                                            <span>6484392.75 / 6484392.75 CGV</span>
-                                        </li>
-                                        <li style={{ '--percentage': '100%' }}>
-                                            <span className="progress_bar">
+                                    <div className="card_body">
+                                        <div className="card_body_section_1 flex items-center">
+                                            <div className="item_box ">
+                                                <small>TOTAL RAISED</small>
+                                                <div className="coin_box flex items-center gap-[8px]">
+                                                    <img src={v.coin_img} alt="bnb" />
+                                                    <span data-tooltip-target={`coin_tooltip_${v.id}`} data-tooltip-placement="top" className="coin_amount text-[32px] font-bold">
+                                                        {v.coin_amount}
+                                                    </span>
+                                                    <div id={`coin_tooltip_${v.id}`} role="tooltip" class="absolute text-[32px] z-10 invisible inline-block 
+                                                    font-medium text-white  rounded-lg shadow-sm opacity-0 tooltip ">
+                                                        {v.coin_tooltip}
+                                                        <div class="tooltip-arrow" data-popper-arrow></div>
+                                                    </div>
 
-                                            </span>
-                                        </li>
+                                                    <span className="coin_name text-[32px] font-bold">
+                                                        {v.coin_name}
+                                                    </span>
+                                                    <span className="coin_type">Filled</span>
+                                                </div>
+                                            </div>
+                                            <div className="item_box">
+                                                <button className="btn_card_gray">{v.coin_rate}</button>
+                                            </div>
+                                        </div>
+                                        <div className="card_body_section_2 flex items-center">
+                                            <ul className='w-full'>
+                                                <li className="flex justify-between py-[24px]">
+                                                    <span>
+                                                        Progress {v.progress}
+                                                    </span>
+                                                    <span>6484392.75 / 6484392.75 CGV</span>
+                                                </li>
+                                                <li style={{ '--percentage': v.progress }}>
+                                                    <span className="progress_bar">
 
-                                        <li className='flex justify-between py-[24px] opacity-70 text-[14px]'>
-                                            <span>LIMITED</span>
-                                            <span>PARTICIPANTS: 6280</span>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
+                                                    </span>
+                                                </li>
 
-                        </div>
-
-                        <div className="com_pools_card_item ">
-                            <div className="card_header flex  gap-6 p-3">
-                                <img src={require('../../static/images/1688740172997solidus-logo.webp')} alt="img" />
-                                <div className="content">
-                                    <div className="flex items-start mb-3 justify-between"><h3>Solidus AI</h3>
-                                    </div>
-                                    <p>
-                                        Solidus has successfully constructed an environmentally conscious, state-of-the-art High-Performance Computing (HPC) Data Centre spanning over 8,000 square feet. This facility is strategically situated in a highly secure European location. In conjunction with this remarkable achievement, Solidus is poised to unveil the ...
-                                    </p>
-                                </div>
-                            </div>
-                            <div className="card_body">
-                                <div className="card_body_section_1 flex items-center">
-                                    <div className="item_box ">
-                                        <small>TOTAL RAISED</small>
-                                        <div className="coin_box flex items-center gap-[8px]">
-                                            <img src={require('../../static/icons/bnb.webp')} alt="bnb" />
-                                            <span className="coin_amount text-[32px] font-bold">
-                                                400K
-                                            </span>
-                                            <span className="coin_name text-[32px] font-bold">
-                                                BUSD
-                                            </span>
-                                            <span className="coin_type">Filled</span>
+                                                <li className='flex justify-between py-[24px] opacity-70 text-[14px]'>
+                                                    <span>LIMITED</span>
+                                                    <span>PARTICIPANTS: {v.participants}</span>
+                                                </li>
+                                            </ul>
                                         </div>
                                     </div>
-                                    <div className="item_box">
-                                        <button className="btn_card_gray">1 BUSD = 33.33 SOPH</button>
-                                    </div>
+
                                 </div>
-                                <div className="card_body_section_2 flex items-center">
-                                    <ul className='w-full'>
-                                        <li className="flex justify-between py-[24px]">
-                                            <span>
-                                                Progress 100%
-                                            </span>
-                                            <span>6484392.75 / 6484392.75 CGV</span>
-                                        </li>
-                                        <li style={{ '--percentage': '100%' }}>
-                                            <span className="progress_bar">
+                            )
+                        })}
 
-                                            </span>
-                                        </li>
 
-                                        <li className='flex justify-between py-[24px] opacity-70 text-[14px]'>
-                                            <span>LIMITED</span>
-                                            <span>PARTICIPANTS: 6280</span>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
 
-                        </div>
-
-                        <div className="com_pools_card_item ">
-                            <div className="card_header flex  gap-6 p-3">
-                                <img src={require('../../static/images/1688740172997solidus-logo.webp')} alt="img" />
-                                <div className="content">
-                                    <div className="flex items-start mb-3 justify-between"><h3>Solidus AI</h3>
-                                    </div>
-                                    <p>
-                                        Solidus has successfully constructed an environmentally conscious, state-of-the-art High-Performance Computing (HPC) Data Centre spanning over 8,000 square feet. This facility is strategically situated in a highly secure European location. In conjunction with this remarkable achievement, Solidus is poised to unveil the ...
-                                    </p>
-                                </div>
-                            </div>
-                            <div className="card_body">
-                                <div className="card_body_section_1 flex items-center">
-                                    <div className="item_box ">
-                                        <small>TOTAL RAISED</small>
-                                        <div className="coin_box flex items-center gap-[8px]">
-                                            <img src={require('../../static/icons/bnb.webp')} alt="bnb" />
-                                            <span className="coin_amount text-[32px] font-bold">
-                                                400K
-                                            </span>
-                                            <span className="coin_name text-[32px] font-bold">
-                                                BUSD
-                                            </span>
-                                            <span className="coin_type">Filled</span>
-                                        </div>
-                                    </div>
-                                    <div className="item_box">
-                                        <button className="btn_card_gray">1 BUSD = 33.33 SOPH</button>
-                                    </div>
-                                </div>
-                                <div className="card_body_section_2 flex items-center">
-                                    <ul className='w-full'>
-                                        <li className="flex justify-between py-[24px]">
-                                            <span>
-                                                Progress 100%
-                                            </span>
-                                            <span>6484392.75 / 6484392.75 CGV</span>
-                                        </li>
-                                        <li style={{ '--percentage': '100%' }}>
-                                            <span className="progress_bar">
-
-                                            </span>
-                                        </li>
-
-                                        <li className='flex justify-between py-[24px] opacity-70 text-[14px]'>
-                                            <span>LIMITED</span>
-                                            <span>PARTICIPANTS: 6280</span>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-
-                        </div>
-
-                        <div className="com_pools_card_item ">
-                            <div className="card_header flex  gap-6 p-3">
-                                <img src={require('../../static/images/1688740172997solidus-logo.webp')} alt="img" />
-                                <div className="content">
-                                    <div className="flex items-start mb-3 justify-between"><h3>Solidus AI</h3>
-                                    </div>
-                                    <p>
-                                        Solidus has successfully constructed an environmentally conscious, state-of-the-art High-Performance Computing (HPC) Data Centre spanning over 8,000 square feet. This facility is strategically situated in a highly secure European location. In conjunction with this remarkable achievement, Solidus is poised to unveil the ...
-                                    </p>
-                                </div>
-                            </div>
-                            <div className="card_body">
-                                <div className="card_body_section_1 flex items-center">
-                                    <div className="item_box ">
-                                        <small>TOTAL RAISED</small>
-                                        <div className="coin_box flex items-center gap-[8px]">
-                                            <img src={require('../../static/icons/bnb.webp')} alt="bnb" />
-                                            <span className="coin_amount text-[32px] font-bold">
-                                                400K
-                                            </span>
-                                            <span className="coin_name text-[32px] font-bold">
-                                                BUSD
-                                            </span>
-                                            <span className="coin_type">Filled</span>
-                                        </div>
-                                    </div>
-                                    <div className="item_box">
-                                        <button className="btn_card_gray">1 BUSD = 33.33 SOPH</button>
-                                    </div>
-                                </div>
-                                <div className="card_body_section_2 flex items-center">
-                                    <ul className='w-full'>
-                                        <li className="flex justify-between py-[24px]">
-                                            <span>
-                                                Progress 100%
-                                            </span>
-                                            <span>6484392.75 / 6484392.75 CGV</span>
-                                        </li>
-                                        <li style={{ '--percentage': '100%' }}>
-                                            <span className="progress_bar">
-
-                                            </span>
-                                        </li>
-
-                                        <li className='flex justify-between py-[24px] opacity-70 text-[14px]'>
-                                            <span>LIMITED</span>
-                                            <span>PARTICIPANTS: 6280</span>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-
-                        </div>
 
                     </div>
                 </div>

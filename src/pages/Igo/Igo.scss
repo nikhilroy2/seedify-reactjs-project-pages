@@ -71,6 +71,7 @@
     }
 
     #Section4 {
+        padding-bottom: 100px;
         .com_pools_card {
             .com_pools_card_item {
                 min-height: 250px;
@@ -132,12 +133,17 @@
                         align-items: center;
                         justify-content: space-between;
                         padding: 0 24px;
-
+                        [role="tooltip"]{
+                            background: rgba(19,20,30,.878);
+                            border: 2px solid rgba(123,245,251,.08);
+                            border-radius: 6px;
+                            padding: 0 1.5rem;
+                        }
                         .item_box {
                             small {
                                 font-weight: 600;
                                 font-size: 14px;
-                                opacity: .6;
+                                opacity: .6; 
                                 display: inline-block;
                                 margin-bottom: 8px;
                             }

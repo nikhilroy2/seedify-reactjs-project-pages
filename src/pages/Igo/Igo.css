@@ -60,6 +60,9 @@
 #Igo #Section2 .learning_card .card_item .card_action:hover {
   background: rgba(64, 36, 174, 0.6);
 }
+#Igo #Section4 {
+  padding-bottom: 100px;
+}
 #Igo #Section4 .com_pools_card .com_pools_card_item {
   min-height: 250px;
   background: hsla(0, 0%, 100%, 0.04);
@@ -114,6 +117,12 @@
   align-items: center;
   justify-content: space-between;
   padding: 0 24px;
+}
+#Igo #Section4 .com_pools_card .com_pools_card_item .card_body .card_body_section_1 [role=tooltip] {
+  background: rgba(19, 20, 30, 0.878);
+  border: 2px solid rgba(123, 245, 251, 0.08);
+  border-radius: 6px;
+  padding: 0 1.5rem;
 }
 #Igo #Section4 .com_pools_card .com_pools_card_item .card_body .card_body_section_1 .item_box small {
   font-weight: 600;
