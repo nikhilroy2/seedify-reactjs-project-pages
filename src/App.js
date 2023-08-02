@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 
 
@@ -10,6 +9,7 @@ import Base from './layout/base/Base';
 // .................Pages............................
 import Homepage from './pages/homepage/Homepage';
 import TermsOfServices from './pages/TermsOfServices/TermsOfServices';
+import Igo from './pages/Igo/Igo';
 // .................Pages............................End
 
 function App() {
@@ -21,6 +21,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Homepage></Homepage>}></Route>
             <Route path="/terms-of-services" element={<TermsOfServices></TermsOfServices>}></Route>
+            <Route path="/igo" element={<Igo></Igo>}></Route>
           </Routes>
         </Base>
       </BrowserRouter>

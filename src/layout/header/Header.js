@@ -20,7 +20,7 @@ const Navbar = () => {
                 id: 1,
                 icon: require('../../static/icons/homead17.png'),
                 name: 'IGO Launchpad Home',
-                link: '#',
+                link: '/igo',
                 description: 'Learn more about the way the IGOs work at Seedify, and how to join them.'
             },
             {
@@ -136,7 +136,8 @@ const Navbar = () => {
                                     {dropdown_object?.igo_launchpad?.map(v => {
                                         return (
                                             <li key={v.id} className='dropdown_action_list_item'>
-                                                <a href={v.link} className="dropdown_action">
+
+                                                <Link className='dropdown_action'>
                                                     <div className="flex items-start">
                                                         <img className='me-3' src={v.icon} alt="" />
                                                         <div className="colntent">
@@ -146,7 +147,7 @@ const Navbar = () => {
                                                             </p>
                                                         </div>
                                                     </div>
-                                                </a>
+                                                </Link>
                                             </li>
                                         )
                                     })}
