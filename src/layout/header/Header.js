@@ -277,7 +277,7 @@ const Navbar = () => {
                    
                     
                     
-                    <Link to="/profile" className="user_btn text-white bg-[#ffffff0a]">
+                    <Link to="/profile/overview" className="user_btn text-white bg-[#ffffff0a]">
                         <img src={require('../../static/images/user.36506f07.svg').default} alt="" />
                     </Link>
                 </li>

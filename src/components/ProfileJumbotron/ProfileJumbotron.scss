@@ -1,0 +1,37 @@
+#ProfileJumbotron {
+  background: url(../../static/images/user-profile-header-bg.16815cab.svg) 50%
+    no-repeat;
+  height: 128px;
+  background-size: cover;
+  .tab_list {
+    a {
+      font-weight: 700;
+      font-size: 1.5em;
+      line-height: 120%;
+      padding-bottom: 15px;
+      opacity: 0.3;
+      display: inline-block;
+      cursor: pointer;
+      &.active_btn {
+        border-bottom: 3px solid #fff;
+        opacity: 1;
+      }
+    }
+  }
+  .control_wrapper {
+    button {
+      width: 192px;
+      padding: 18px 52px;
+      border-radius: 6px;
+      color: #fff;
+      background: #5231d4;
+      cursor: pointer;
+      font-weight: 700;
+      font-size: 16px;
+      display: inline-block;
+      &:hover {
+        background: #4829c3;
+      }
+    }
+  }
+}
