@@ -274,9 +274,12 @@ const Navbar = () => {
                     <button className="connect_btn text-white bg-[#512fd9] hover:bg-[#6444e2]">Connect</button>
                 </li>
                 <li>
-                    <button className="user_btn text-white bg-[#ffffff0a]">
+                   
+                    
+                    
+                    <Link to="/profile" className="user_btn text-white bg-[#ffffff0a]">
                         <img src={require('../../static/images/user.36506f07.svg').default} alt="" />
-                    </button>
+                    </Link>
                 </li>
             </ul>
         </nav>

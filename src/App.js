@@ -12,6 +12,7 @@ import TermsOfServices from './pages/TermsOfServices/TermsOfServices';
 import PrivacyPolicy from './pages/PrivacyPolicy/PrivacyPolicy';
 import Whitepaper from './pages/whitepaper/whitepaper';
 import Igo from './pages/Igo/Igo';
+import Profile from './pages/profile/Profile';
 // .................Pages............................End
 
 function App() {
@@ -26,6 +27,7 @@ function App() {
             <Route path="/privacy-policy" element={<PrivacyPolicy></PrivacyPolicy>}></Route>
             <Route path="/whitepaper" element={<Whitepaper></Whitepaper>}></Route>
             <Route path="/igo" element={<Igo></Igo>}></Route>
+            <Route path="/profile" element={<Profile></Profile>}></Route>
           </Routes>
         </Base>
       </BrowserRouter>
