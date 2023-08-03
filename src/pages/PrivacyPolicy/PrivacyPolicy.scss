@@ -32,6 +32,9 @@
             &.roman{
               list-style-type: lower-roman;
             }
+            &.disc{
+                list-style-type: disc;
+            }
             li {
                 margin-top: 15px;
                 // padding-left: 15px;

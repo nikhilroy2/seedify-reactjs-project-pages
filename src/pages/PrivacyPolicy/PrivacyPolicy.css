@@ -26,6 +26,9 @@
 #PrivacyPolicy #Section1 ol.content_list.roman {
   list-style-type: lower-roman;
 }
+#PrivacyPolicy #Section1 ol.content_list.disc {
+  list-style-type: disc;
+}
 #PrivacyPolicy #Section1 ol.content_list li {
   margin-top: 15px;
   margin-bottom: 25px;
