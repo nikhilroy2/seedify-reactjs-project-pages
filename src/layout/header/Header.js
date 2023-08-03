@@ -34,7 +34,7 @@ const Navbar = () => {
                 id: 3,
                 icon: require('../../static/icons/claims7606.png'),
                 name: 'Claim',
-                link: '#',
+                link: '/profile/claims',
                 description: 'Browse the available claims and see the ones you are eligible for.'
             },
             {
@@ -253,7 +253,9 @@ const Navbar = () => {
 
                 </li>
                 <li>
-                    <a href="/claims" className='action_item'>Claims</a>
+                    <Link to="/profile/claims" className='action_item'>
+                        Claims
+                    </Link>
                 </li>
             </ul>
 
@@ -274,9 +276,9 @@ const Navbar = () => {
                     <button className="connect_btn text-white bg-[#512fd9] hover:bg-[#6444e2]">Connect</button>
                 </li>
                 <li>
-                   
-                    
-                    
+
+
+
                     <Link to="/profile/overview" className="user_btn text-white bg-[#ffffff0a]">
                         <img src={require('../../static/images/user.36506f07.svg').default} alt="" />
                     </Link>
